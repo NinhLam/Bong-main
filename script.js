@@ -25,7 +25,7 @@ document.getElementById('container').appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.autoRotate = true;
-controls.autoRotateSpeed = 0.2;
+controls.autoRotateSpeed = 0.5;
 controls.enabled = false;
 controls.target.set(0, 0, 0);
 controls.enablePan = false;
@@ -1207,8 +1207,8 @@ function startCameraAnimation() {
     z: camera.position.z,
   };
   const stage1Pos = { x: startPos.x, y: 0, z: startPos.z };
-  const stage2Pos = { x: startPos.x, y: 0, z: 160 };
-  const targetPos = { x: -40, y: 100, z: 100 };
+  const stage2Pos = { x: startPos.x, y: 0, z: 120 };
+  const targetPos = { x: -40, y: 70, z: 100 };
 
   const d1 = 0.2;
   const d2 = 0.55;
